@@ -1,0 +1,14 @@
+[project]
+name = "dotenv.pth"
+version = "1.0"
+description = "call `load_dotenv()` when python starts"
+readme = "README.md"
+dependencies = ["python-dotenv"]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+package-dir = "src"
+includes = ["src/*load_dotenv*"]
